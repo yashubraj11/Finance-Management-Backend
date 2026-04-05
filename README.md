@@ -67,6 +67,23 @@ exception      - Global Exception Handling
 
 --------------------------------------------------
 
+Users(Registration)
+
+POST /users 
+
+Request Body:
+{
+  "name": "John Doe",
+  "email": "john@test.com",
+  "password": "John@123",
+  "role": "ANALYST"
+}
+
+GET /users (ADMIN only)
+(No request body)
+
+--------------------------------------------------
+
 API Endpoints Overview (with JSON Examples)
 
 Authentication
@@ -84,22 +101,6 @@ Response:
   "token": "JWT_TOKEN"
 }
 
---------------------------------------------------
-
-Users(Registration)
-
-POST /users (ADMIN only)
-
-Request Body:
-{
-  "name": "John Doe",
-  "email": "john@test.com",
-  "password": "John@123",
-  "role": "ANALYST"
-}
-
-GET /users
-(No request body)
 
 --------------------------------------------------
 
