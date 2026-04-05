@@ -86,7 +86,7 @@ Response:
 
 --------------------------------------------------
 
-Users
+Users(Registration)
 
 POST /users (ADMIN only)
 
